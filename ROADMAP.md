@@ -10,8 +10,8 @@ Status: In progress
 - [x] Create and connect the public GitHub repository.
 - [x] Add reusable AI collaboration documentation.
 - [x] Define the initial product baseline.
-- [ ] Review and commit the initial documentation.
-- [ ] Document the proven GitHub CLI project-creation workflow in the Developer Playbook.
+- [x] Review and commit the initial documentation.
+- [x] Document the proven GitHub CLI project-creation workflow in the Developer Playbook.
 
 ## Phase 1 - Recipe Discovery
 
