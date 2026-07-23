@@ -4,8 +4,8 @@
 
 - Project name: `Recipe Dashboard`
 - Purpose: `A personal recipe discovery and pantry intelligence application that helps users find meals they will enjoy, reduce food waste, manage evolving recipes, and make better cooking decisions.`
-- Primary run command: `Not established yet`
-- Primary verification command: `Not established yet`
+- Primary run command: `python manage.py runserver`
+- Primary verification command: `python manage.py check`
 
 Replace every angle-bracket placeholder during project setup. Do not leave unresolved placeholders in the committed project copy.
 
@@ -101,7 +101,13 @@ Add durable rules unique to this repository here as they are discovered. Keep re
 
 This is the authoritative continuing handoff record for AI agents working on this repository from different computers. At every session end or computer switch, add a new entry directly below this explanation, with the newest entry first. Older entries preserve useful decision history. Keep entries concise but preserve decisions and context that cannot be recovered from the code alone. Do not use this section as a general development diary or duplicate information already clear from Git history.
 
-No sessions have been recorded yet.
+### 2026-07-22 22:27 EDT — Django bootstrap started
+
+- Completed: Approved Django 5.2.16 LTS with Python 3.14.6, created `.venv`, recorded Django in `requirements.txt`, generated the Django `config` project and `manage.py`, created the ignored local SQLite database, and applied all built-in Django migrations. Updated `.gitignore` for Python, the virtual environment, SQLite, secrets, PyCharm, and private conversation exports.
+- Decisions and architecture: Use Django 5.2 LTS, SQLite, Django templates, HTML, CSS, and limited JavaScript. Keep `config` limited to project configuration. Create only a `dashboard` app for the first vertical slice; do not create recipe or meal apps until their code ownership is intentionally designed. The user is typing commands and edits for learning while the agent guides and verifies; roles change only when the user requests it.
+- Next steps: From the repository root with `.venv` activated, run `python manage.py runserver`, open `http://127.0.0.1:8000/`, confirm the default Django success page, and stop the server with `Ctrl+C`. Then create the `dashboard` app, one custom home page, one URL route, and one focused Django test.
+- Known issues: The development server and browser page have not been verified. No Recipe Dashboard app, custom page, domain model, or application test exists yet. Detailed application architecture remains intentionally open beyond the approved bootstrap boundary.
+- Verification: `python manage.py check` passed with zero issues. `python manage.py showmigrations --plan` showed all built-in `admin`, `auth`, `contenttypes`, and `sessions` migrations applied. `db.sqlite3`, `.venv`, `.idea`, and `docs/ChatGPT_Conversations` are ignored. No browser or server verification was performed.
 
 ### Entry format
 

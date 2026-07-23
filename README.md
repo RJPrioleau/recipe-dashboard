@@ -2,7 +2,7 @@ Recipe Dashboard helps a household decide what to cook next by combining recipes
 
 ## Status
 
-Product discovery is complete, and Recipe Dashboard is preparing to enter implementation. The approved initial direction is Python, Django, SQLite, Django templates, HTML, CSS, and limited JavaScript. Detailed architecture, dependency versions, project structure, and deployment remain open.
+Product discovery is complete, and implementation has started. The project is bootstrapped with Python 3.14, Django 5.2 LTS, SQLite, Django templates, HTML, CSS, and limited JavaScript. Detailed application architecture and deployment remain open.
 
 ## First Usable Version
 
@@ -31,4 +31,24 @@ Recipes are reusable building blocks, and meals are assembled from multiple reci
 
 ## Development
 
-The run command and verification command are not established yet. Read `AGENTS.md` and the repository documentation before making implementation or architectural decisions.
+Create and activate a local virtual environment, then install the recorded dependency:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r .\requirements.txt
+```
+
+Run the Django development server:
+
+```powershell
+python .\manage.py runserver
+```
+
+Verify the Django configuration:
+
+```powershell
+python .\manage.py check
+```
+
+Read `AGENTS.md` and the repository documentation before making implementation or architectural decisions.

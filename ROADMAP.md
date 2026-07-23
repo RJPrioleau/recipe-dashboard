@@ -1,10 +1,10 @@
 # Roadmap
 
-This roadmap records approved product outcomes. It does not approve application architecture, frameworks, dependencies, or implementation details.
+This roadmap records approved product outcomes and implementation milestones. Approved technical direction is documented in `docs/PRODUCT.md`; detailed architecture still requires explicit approval.
 
 ## Phase 0 - Repository and Product Foundation
 
-Status: In progress
+Status: Complete
 
 - [x] Create the local Git repository.
 - [x] Create and connect the public GitHub repository.
@@ -13,31 +13,30 @@ Status: In progress
 - [x] Review and commit the initial documentation.
 - [x] Document the proven GitHub CLI project-creation workflow in the Developer Playbook.
 
-## Phase 1 - Recipe Discovery
+## Phase 1 - Application Bootstrap
+
+Status: In progress
+
+- [x] Approve Python, Django 5.2 LTS, SQLite, Django templates, HTML, CSS, and limited JavaScript.
+- [x] Create and activate the local virtual environment.
+- [x] Record Django 5.2.16 in `requirements.txt`.
+- [x] Generate the Django project configuration.
+- [x] Create the local SQLite database and apply built-in migrations.
+- [x] Establish the initial run and verification commands.
+- [ ] Run the development server and verify the default Django page in a browser.
+- [ ] Create the `dashboard` app as the first vertical slice.
+- [ ] Replace the default page with a custom Recipe Dashboard page.
+- [ ] Add and run the first focused Django test.
+
+## Phase 2 - First Usable Workflow
 
 Status: Planned
 
-Deliver the first usable version for one operator serving one household.
+Deliver the approved end-to-end Version 1 workflow documented in `docs/PRODUCT.md`, from an explainable complete-meal suggestion through ingredient review, cooking-session completion, and cooking history.
 
-Approved outcomes:
+Build this phase as small vertical slices. Resolve remaining product and architectural decisions before implementing the behavior they affect.
 
-- Include personal and external recipe sources.
-- Allow personal recipes to be added, viewed, and edited.
-- Preserve prior personal recipe versions after edits.
-- Present recipes as a filterable list without automatic ranking.
-- Filter using household likes and dislikes.
-- Filter using previous ratings or cooking history.
-- Filter using preparation time or effort.
-
-Before implementation begins:
-
-- Resolve the open product decisions in `docs/PRODUCT.md`.
-- Research and approve an external recipe source and access method.
-- Evaluate and approve the application architecture.
-- Establish run and verification commands.
-- Ask before adding dependencies, frameworks, tools, or project structure.
-
-## Phase 2 - Pantry Tracking
+## Phase 3 - Pantry Tracking
 
 Status: Approved for later
 
@@ -45,7 +44,7 @@ Add basic pantry tracking after the first usable recipe-discovery version.
 
 Detailed requirements have not been defined.
 
-## Phase 3 - Food-Waste Guidance
+## Phase 4 - Food-Waste Guidance
 
 Status: Approved for later
 
@@ -55,6 +54,4 @@ Detailed requirements have not been defined.
 
 ## Parking Lot
 
-No parking-lot ideas have been recorded.
-
-Parking-lot items are not approved requirements or roadmap commitments.
+Parking-lot ideas and their non-commitment boundary are maintained in `docs/PRODUCT.md`.

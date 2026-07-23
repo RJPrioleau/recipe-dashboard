@@ -1,5 +1,18 @@
 # Machine-specific PyCharm project state
 .idea/
 
+# Python virtual environment
+.venv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local application data
+db.sqlite3
+
+# Local Environment variables and secrets
+.env
+
 # Private browser ChatGPT design-history exports
 docs/ChatGPT_Conversations/
