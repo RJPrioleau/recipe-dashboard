@@ -1,28 +1,34 @@
-A personal recipe discovery and pantry intelligence application that helps users find meals they will enjoy, reduce food waste, manage evolving recipes, and make better cooking decisions.
+Recipe Dashboard helps a household decide what to cook next by combining recipes, preferences, pantry awareness, and cooking history into a single decision-support application.
 
 ## Status
 
-Recipe Dashboard is in product-definition and repository-setup work. Application architecture, dependencies, the user interface, and implementation tools have not been selected.
+Product discovery is complete, and Recipe Dashboard is preparing to enter implementation. The approved initial direction is Python, Django, SQLite, Django templates, HTML, CSS, and limited JavaScript. Detailed architecture, dependency versions, project structure, and deployment remain open.
 
 ## First Usable Version
 
-The first usable version will help one operator discover recipes for their household through a filterable list containing both personal and external recipes.
+The first usable version helps one operator decide what their household should cook next through a dashboard that suggests complete saved or imported meals and explains each suggestion.
 
-Approved filters are:
+The first usable workflow includes:
 
-- Household likes and dislikes
-- Previous ratings or cooking history
-- Preparation time or effort
+- Creating or importing recipes
+- Organizing recipes into meals
+- Scaling individual recipes
+- Reviewing combined ingredients
+- Exporting missing ingredients as a shopping list
+- Moving freely through recipes and cooking steps
+- Explicitly completing a cooking session
+- Recording cooking history and optional meal ratings
 
-Personal recipes can be added, viewed, and edited. Prior versions must remain available after edits.
+Recipes are reusable building blocks, and meals are assembled from multiple recipes. The first version does not invent new recipe combinations, track pantry inventory automatically, or require artificial intelligence.
 
 ## Documentation
 
 - [Product definition](docs/PRODUCT.md)
+- [Plain-English data dictionary](docs/DATA_DICTIONARY.md)
 - [Roadmap](ROADMAP.md)
 - [Changelog](CHANGELOG.md)
 - [Collaboration workflow](docs/COLLABORATION.md)
 
 ## Development
 
-The run command, verification command, architecture, dependencies, and development workflow are not established yet. Read `AGENTS.md` and all repository documentation before making implementation decisions.
+The run command and verification command are not established yet. Read `AGENTS.md` and the repository documentation before making implementation or architectural decisions.
