@@ -9,6 +9,19 @@
     <main>
         <h1>Recipe Dashboard</h1>
         <p>Choose what to cook next.</p>
+
+        <section>
+            <h2>Recently Cooked</h2>
+            <p>{{ dashboard.last_cooked_meal.name }}</p>
+            <p>Cooked on {{ dashboard.last_cooked_meal.cooked_on }}</p>
+        </section>
+
+        <section>
+            <h2>Suggested Next Meal</h2>
+            <p>{{ dashboard.suggested_meal.name }}</p>
+            <p>Last cooked on {{ dashboard.suggested_meal.last_cooked_on }}</p>
+            <p>{{ dashboard.suggested_meal.reason }}</p>
+        </section>
     </main>
 </body>
 </html>
