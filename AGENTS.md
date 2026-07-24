@@ -101,6 +101,14 @@ Add durable rules unique to this repository here as they are discovered. Keep re
 
 This is the authoritative continuing handoff record for AI agents working on this repository from different computers. At every session end or computer switch, add a new entry directly below this explanation, with the newest entry first. Older entries preserve useful decision history. Keep entries concise but preserve decisions and context that cannot be recovered from the code alone. Do not use this section as a general development diary or duplicate information already clear from Git history.
 
+### 2026-07-23 22:44 EDT — First dashboard vertical slice
+
+- Completed: Verified the default Django page, created and registered the `dashboard` app, added a project-to-app URL boundary, implemented a temporary home response at `/`, preserved the Django admin at `/admin/`, and added a focused home-view test. Added PyCharm file-navigation shortcuts to the independent Developer Playbook repository.
+- Decisions and architecture: Keep `config` responsible for project-level routing and delegate dashboard routes to `dashboard/urls.py`. Refer to routes by name in tests so URL paths can change without rewriting callers. Continue with the user typing implementation changes for learning while the agent explains, reviews, and verifies.
+- Next steps: Replace the temporary `HttpResponse` in `dashboard/views.py` with `render(request, "dashboard/home.html")`, create the first dashboard template, update the focused test to assert durable page behavior, and verify it in both the test suite and browser. Do not introduce domain models or additional apps without explicit approval.
+- Known issues: The home page is temporary plain text and has no template, styling, dashboard data, or domain model. No admin user exists, which is expected. Detailed application architecture remains intentionally open.
+- Verification: `python manage.py check` passed with zero issues; `python manage.py test dashboard` passed one test; `/` displayed `Recipe Dashboard is running.`; `/admin/` displayed the Django admin login; `Ctrl+C` stopped the development server; `git diff --check` passed before handoff preparation.
+
 ### 2026-07-22 22:27 EDT — Django bootstrap started
 
 - Completed: Approved Django 5.2.16 LTS with Python 3.14.6, created `.venv`, recorded Django in `requirements.txt`, generated the Django `config` project and `manage.py`, created the ignored local SQLite database, and applied all built-in Django migrations. Updated `.gitignore` for Python, the virtual environment, SQLite, secrets, PyCharm, and private conversation exports.
