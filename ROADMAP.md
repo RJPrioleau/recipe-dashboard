@@ -15,7 +15,7 @@ Status: Complete
 
 ## Phase 1 - Application Bootstrap
 
-Status: In progress
+Status: Complete
 
 - [x] Approve Python, Django 5.2 LTS, SQLite, Django templates, HTML, CSS, and limited JavaScript.
 - [x] Create and activate the local virtual environment.
@@ -23,10 +23,10 @@ Status: In progress
 - [x] Generate the Django project configuration.
 - [x] Create the local SQLite database and apply built-in migrations.
 - [x] Establish the initial run and verification commands.
-- [ ] Run the development server and verify the default Django page in a browser.
-- [ ] Create the `dashboard` app as the first vertical slice.
-- [ ] Replace the default page with a custom Recipe Dashboard page.
-- [ ] Add and run the first focused Django test.
+- [x] Run the development server and verify the default Django page in a browser.
+- [x] Create the `dashboard` app as the first vertical slice.
+- [x] Replace the default page with a custom Recipe Dashboard page.
+- [x] Add and run the first focused Django test.
 
 ## Phase 2 - First Usable Workflow
 

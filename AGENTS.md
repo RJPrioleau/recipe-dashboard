@@ -101,6 +101,14 @@ Add durable rules unique to this repository here as they are discovered. Keep re
 
 This is the authoritative continuing handoff record for AI agents working on this repository from different computers. At every session end or computer switch, add a new entry directly below this explanation, with the newest entry first. Older entries preserve useful decision history. Keep entries concise but preserve decisions and context that cannot be recovered from the code alone. Do not use this section as a general development diary or duplicate information already clear from Git history.
 
+### 2026-07-24 15:55 EDT — Template page and Surface setup
+
+- Completed: Cloned the repository into the Surface Pro standard workspace at `C:\Users\ridin\Python-Projects`, recreated `.venv` with Python 3.14.6, installed Django 5.2.16, verified PyCharm uses the project interpreter, replaced the temporary home response with `dashboard/templates/dashboard/home.html`, updated the focused view test, and marked Phase 1 complete in the roadmap and changelog.
+- Decisions and architecture: Phase 1 application bootstrap is complete. Continue using PowerShell for filesystem operations, Git, application commands, and verification; use PyCharm keyboard shortcuts for file navigation and editing. Keep `config` responsible for project routing and `dashboard` responsible for the home page. No domain models, new apps, or detailed Phase 2 architecture have been approved.
+- Next steps: On the desktop, pull `main`, recreate or activate the machine-local virtual environment as needed, read this file and `docs/COLLABORATION.md`, then begin Phase 2 planning by reviewing `docs/PRODUCT.md` and `docs/DATA_DICTIONARY.md` and obtaining explicit approval for the smallest first usable-workflow vertical slice before changing models or application structure.
+- Known issues: Detailed application architecture, data model, suggestion-selection behavior, and several product rules remain open. The current dashboard is intentionally minimal and has no styling or live data.
+- Verification: `python -m py_compile .\dashboard\views.py .\dashboard\tests.py` completed silently; `python .\manage.py test dashboard` passed one test; `python .\manage.py check` passed with zero issues; `/` displayed `Recipe Dashboard` and `Choose what to cook next.` in the browser; `git diff --check` passed.
+
 ### 2026-07-23 22:44 EDT — First dashboard vertical slice
 
 - Completed: Verified the default Django page, created and registered the `dashboard` app, added a project-to-app URL boundary, implemented a temporary home response at `/`, preserved the Django admin at `/admin/`, and added a focused home-view test. Added PyCharm file-navigation shortcuts to the independent Developer Playbook repository.
