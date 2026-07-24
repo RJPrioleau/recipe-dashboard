@@ -3,8 +3,9 @@ from django.urls import reverse
 
 
 class HomeViewTests(TestCase):
-    def test_home_page_displays_dashboard_message(self):
+    def test_home_page_uses_dashboard_template(self):
         response = self.client.get(reverse("home"))
 
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Recipe Dashboard is running.")
+        self.assertTemplateUsed(response, "dashboard/home.html")
+        self.assertContains(response, "<h1>Recipe Dashboard</h1>", html=True)
